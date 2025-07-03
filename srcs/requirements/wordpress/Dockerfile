@@ -20,3 +20,17 @@ COPY tools/wp-entrypoint.sh /usr/local/bin/wp-entrypoint.sh
 RUN chmod +x /usr/local/bin/wp-entrypoint.sh
 
 ENTRYPOINT ["wp-entrypoint.sh"]
+
+ENV $MARIADB_DATABASE DB
+ENV $MARIADB_USER soel
+ENV $MARIADB_PASSWORD 0000
+ENV DOMAIN_NAME localhost
+ENV WP_TITLE "Inception"
+ENV WP_ADMIN_USER soel
+ENV WP_ADMIN_PASSWORD 0000
+ENV WP_ADMIN_EMAIL soufianbouazzaoui96@gmail.com
+
+ENV WP_USERNAME soufaine
+ENV WP_USER_EMAIL soufianbouazzaoui96@gmail.com
+ENV WP_USER_PASSWORD 0000
+ENV WP_USER_ROLE administrator
