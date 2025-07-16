@@ -32,7 +32,7 @@ services:
     depends_on:
       - wordpress
     volumes:
-      - new:/var/www/html
+      - wp_files:/var/www/html
     networks:
       - inception_network
     env_file: .env
@@ -45,7 +45,7 @@ services:
     depends_on:
       - mariadb
     volumes:
-      - new:/var/www/html
+      - wp_files:/var/www/html
     networks:
       - inception_network
     env_file: .env
@@ -79,8 +79,8 @@ volumes:
       type: none
       o: bind
       device: /home/soel-bou/data/wp_files
-  new:
-    driver_opts:
-      type: none
-      o: bind
-      device: /goinfre/soel-bou/data/wp2
+  # new:
+  #   driver_opts:
+  #     type: none
+  #     o: bind
+  #     device: /goinfre/soel-bou/data/wp2
