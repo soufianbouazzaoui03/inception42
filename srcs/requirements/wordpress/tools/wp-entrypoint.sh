@@ -20,9 +20,9 @@ fi
 
 if [ ! -f wp-config.php ]; then
   wp config create \
-    --dbname="$MARIADB_DATABASE" \
-    --dbuser="$MARIADB_USER" \
-    --dbpass="$MARIADB_PASSWORD" \
+    --dbname="$SQL_DATABASE" \
+    --dbuser="$SQL_USER" \
+    --dbpass="$SQL_PASSWORD" \
     --dbhost=mariadb:3306 \
     --allow-root
 fi

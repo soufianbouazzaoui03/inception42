@@ -50,9 +50,9 @@ services:
       - inception_network
     env_file: .env
     environment:
-      MARIADB_DATABASE: ${SQL_DATABASE}
-      MARIADB_USER: ${SQL_USER}
-      MARIADB_PASSWORD: ${SQL_PASSWORD}
+      SQL_DATABASE: ${SQL_DATABASE}
+      SQL_USER: ${SQL_USER}
+      SQL_PASSWORD: ${SQL_PASSWORD}
       DOMAIN_NAME: ${DOMAIN_NAME}
       WP_TITLE: ${WP_TITLE}
       WP_ADMIN_USER: ${WP_ADMIN_USER}
