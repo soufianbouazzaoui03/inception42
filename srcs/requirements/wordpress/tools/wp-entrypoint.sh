@@ -7,7 +7,7 @@ mv wp-cli.phar /usr/local/bin/wp
 mkdir -p /var/www/html
 cd /var/www/html
 chown -R www-data:www-data /var/www/html
-chmod -R 755 /var/www/html/
+chmod -R 755 /var/www/html
 
 if [ ! -f wp-load.php ]; then
   wp core download --allow-root
