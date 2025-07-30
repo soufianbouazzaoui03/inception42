@@ -15,12 +15,6 @@ services:
       SQL_USER: ${SQL_USER}
       SQL_PASSWORD: ${SQL_PASSWORD}
       SQL_ROOT_PASSWORD: ${SQL_ROOT_PASSWORD}
-    # Optional: Enable if needed
-    # healthcheck:
-    #   test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-    #   interval: 5s
-    #   timeout: 5s
-    #   retries: 10
     restart: always
 
   nginx:

@@ -20,7 +20,6 @@ RUN apt-get update && apt-get upgrade -y && \
 COPY tools/wp-entrypoint.sh /usr/local/bin/wp-entrypoint.sh
 RUN chmod +x /usr/local/bin/wp-entrypoint.sh
 
-# Create necessary directories
 RUN mkdir -p /var/www/html /run/php
 
 EXPOSE 9000
