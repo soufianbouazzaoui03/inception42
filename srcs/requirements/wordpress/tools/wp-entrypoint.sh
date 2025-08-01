@@ -61,8 +61,6 @@ fi
 echo "Configuring PHP-FPM..."
 sed -i 's|^listen = .*|listen = 0.0.0.0:9000|' /etc/php/7.4/fpm/pool.d/www.conf
 
-mkdir -p /run/php
-
 echo "✅ Starting PHP-FPM..."
 exec /usr/sbin/php-fpm7.4 -F
 

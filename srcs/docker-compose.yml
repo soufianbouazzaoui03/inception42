@@ -67,7 +67,7 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/soel-bou/data/wp_DB
+      device: /home/soel-bou/data/wp_DB2
   wp_files:
     driver_opts:
       type: none
